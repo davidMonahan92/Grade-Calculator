@@ -1,0 +1,74 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta http-equiv="cache-control" content="max-age=0" />
+  <meta http-equiv="cache-control" content="no-cache" />
+  <meta http-equiv="expires" content="0" />
+  <meta http-equiv="pragma" content="no-cache" />
+  <title>Exam Grade Calculator</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+	
+</head>
+<body>
+	<form>
+		<div class="container">
+		
+			<div class="box boxInput1">
+
+				<h4>Calculate your CA Percentage</h4>
+
+				<p>Enter your CA Result: <input type="text" class="inputBox" placeholder="Enter you CA Result here.." id="caResult" required></p>
+				
+
+				<p>Enter overall CA mark: <input type="text" class="inputBox" placeholder="Enter CA worth here.." id="caWorth" required></p>
+
+				<!--
+				<button type="submit" class="btn" onclick="calcCaPercentage()"> 
+				-->
+
+			</div>
+			
+			<div class="box boxResult boxInput1">
+				<p><br>Your CA percentage is: <br><br><span id="caPercentage"></span></p>
+			</div>
+			
+			<div class="box boxGrade">
+
+				<h4>Calculate the percentage needed to pass the exam!</h4>
+
+				<p>Enter the Grade you are aiming to achieve: <input type="text" class="inputBox" placeholder="Enter Grade you want here.." id="gradeWanted" required></p>
+
+				<!-- 
+				<button type="button" class="btn" onclick="calcExamPercentage()">Calculate</button> 
+				-->
+			</div>
+			
+			<div class="box boxResult boxGrade">
+				<p>Percentage you need to pass the exam is: <br><br><span id="examPercentage"></span></p>
+			</div>
+			
+			<div class="box boxCalculateinput boxCalculate">
+
+				<h4>Calculate the marks needed to pass the exam!</h4>
+
+				<p>Enter what your exam is worth overall: <br> <input type="text" class="inputBox" placeholder="Enter exam worth here.." id="gradeWorth"></p>
+
+				<button type="button" class="btn"  onclick="calcMarkNeeded()">Calculate</button>
+
+			</div>
+			
+			<div class="box boxResult boxCalculate">
+				<p><br>You Need <br><br><span id="marksNeeded"></span></p>
+			</div>
+		
+		</div>
+  	
+	</form>
+
+	<script src="js/calc.js" ></script>
+  
+</body>
+</html>

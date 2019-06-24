@@ -1,0 +1,144 @@
+<link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
+
+/* Box-sizing border-box */
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+body {
+	margin: 0;
+	padding: 0;
+	background-image: url("https://images.pexels.com/photos/419635/notebook-empty-design-paper-419635.jpeg?auto=compress&cs=tinysrgb&h=350");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-attachment: fixed;
+	font-family: 'Roboto Mono', monospace;
+	font-weight: bold;
+}
+
+p {
+	overflow: auto;
+}
+
+.container {
+	display: flex;
+	flex: 1;
+	justify-content: center;
+	flex-direction: row;
+	flex-wrap: wrap;
+	min-height: 100vh;
+	align-content: center;
+}
+
+.box {
+	padding: 5px;
+	font-size: 17px;
+	width: 500px;
+	border: 1px solid black;
+	text-align: center;
+	background-color: rgba(206,206,206,0.8);
+	height: 160px;
+	align-items: center;
+}
+
+.box h4 {
+	text-decoration: underline;
+}
+
+.boxCalculate{
+	height: 170px;
+}
+
+.boxGrade {
+	height: 140px;
+}
+
+.inputBox {
+	width: 260px;
+	margin: 4px 0 0 4px;
+	height: 25px;
+    font-size: 17px;
+}
+
+.btn {
+	margin: 0 0 10px 0;
+	background-color: #069acc;
+	width: 130px;
+	height: 35px;
+	font-size: 15px;
+	font-weight: bold;
+	color: white;
+	padding: 5px;
+}
+
+.btn:hover {
+	background-color: #0BB6EF;
+}
+
+.boxResult p {
+	position: relative;
+	float: left;
+	top: 30%;
+	left: 50%;
+	transform: translateX(-50%) translateY(-30%);
+}
+
+.boxResult span{
+	text-decoration: underline;
+}
+
+@media only screen and (max-width: 700px) {
+    .container {
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+
+    .box {
+    	width: 400px;
+    	padding: 2px;
+		font-size: 16px;
+		height: 160px;
+    }
+
+    .boxInput1 {
+    	height: 220px;
+    }
+
+    .boxResult {
+    	height: 100px;
+    }
+    
+    .inputBox {
+		width: 280px;
+		margin: 8px 0 0 2px;
+		height: 35px;
+        font-size: 14px;
+	}
+}
+
+@media only screen and (max-width: 550px) {
+    .box {
+    	width: 312px;
+    	padding: 2px;
+		font-size: 16px;
+		height: 190px;
+    }
+
+    .boxInput1 {
+    	height: 220px;
+    }
+
+    .boxResult {
+    	height: 100px;
+    }
+	
+	.boxCalculateinput {
+		height: 220px;
+	}
+    
+    
+    .inputBox {
+		width: 240px;
+		margin: 8px 0 0 2px;
+		height: 35px;
+	}
+}
